@@ -1,4 +1,17 @@
 <aside class="sidebar">
+  <div>
+    <script>(function() {
+      var cx = '{{ CSE_CODE }}';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();</script>
+    <gcse:searchbox-only></gcse:searchbox-only>
+  </div>
   {% if SIDEBAR_IMAGE %}
   <section>
 	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
