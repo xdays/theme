@@ -7,6 +7,9 @@
     <footer>
       {% include '_includes/article_infos.html' %}
       {% include '_includes/sharing.html' %}
+      {% if DUOSHUO_SITENAME and article.status != "draft" %}
+        {% include '_includes/duoshuo_script.html' %}
+      {% endif %}
     </footer>
   </article>
 
