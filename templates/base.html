@@ -37,6 +37,21 @@
   <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
   <script src="{{ SITEURL }}/theme/js/ender.js"></script>
   <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
+  <script type='text/javascript'>
+      var _vds = _vds || [];
+      window._vds = _vds;
+      (function(){
+        _vds.push(['setAccountId', 'b9a634c4249ec956']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+      })();
+  </script>
   {% if article and article.latex %}
     {{ article.latex }}
   {% endif %}
