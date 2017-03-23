@@ -10,6 +10,9 @@
       {% if DUOSHUO_SITENAME and article.status != "draft" %}
         {% include '_includes/duoshuo_script.html' %}
       {% endif %}
+      {% if NETEASE_GENTIE and article.status != "draft" %}
+        {% include '_includes/netease_gentie.html' %}
+      {% endif %}
     </footer>
   </article>
 
