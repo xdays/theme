@@ -1,28 +1,13 @@
 <aside class="sidebar">
-<!--
-  <div>
-    <script>(function() {
-      var cx = '{{ CSE_CODE }}';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//www.google.com/cse/cse.js?cx=' + cx;
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();</script>
-    <gcse:searchbox-only></gcse:searchbox-only>
-  </div>
--->
+  {% include '_includes/google_cse.html' %}
+  {% include '_includes/adsense.html' %}
+  {% include '_includes/cachemoment.html' %}
+
   {% if SIDEBAR_IMAGE %}
   <section>
     <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
   </section>
   {% endif %}
-  <section>
-    <h1>Powered by</h1>
-    <br /> <a href="http://www.cachemoment.com/"><img src="/wp-content/uploads/2016/11/cachemoment.png" /></a>
-  </section>
   <section>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
